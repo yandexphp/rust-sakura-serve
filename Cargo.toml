@@ -1,0 +1,30 @@
+[package]
+name = "sakura-serve"
+version = "1.0.0"
+edition = "2021"
+build = "build.rs"
+authors = ["クシススミタ"]
+description = "This application is a web server with portable functionality, allowing it to be used without installation and with ease of use."
+
+[[bin]]
+name = "SakuraServe"
+path = "src/main.rs"
+
+[dependencies]
+actix-web = { version = "4.0", features = ["cookies"] }
+actix-files = "0.6"
+actix-session = { version = "0.10.1", features = ["cookie-session"] }
+serde = { version = "1.0.164", features = ["derive"] }
+serde_json = "1.0"
+bcrypt = "0.15.1"
+dotenv = "0.15"
+env_logger = "0.11.5"
+log = "0.4"
+webbrowser = "1.0.2"
+tokio = { version = "1.41.1", features = ["full"] }
+uuid = { version = "1", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+utoipa = "5.2.0"
+utoipa-swagger-ui = { version = "8", features = ["actix-web"] }
+windows = "0.58.0"
+futures = "0.3.31"

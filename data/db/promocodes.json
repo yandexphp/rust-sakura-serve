@@ -1,0 +1,128 @@
+[
+  {
+    "code": "WELCOME10",
+    "discount": 10,
+    "available_at": "2024-01-01T00:00:00Z",
+    "expired_at": "2024-12-31T23:59:59Z"
+  },
+  {
+    "code": "SUMMER25",
+    "discount": 25,
+    "available_at": "2024-06-01T00:00:00Z",
+    "expired_at": "2024-08-31T23:59:59Z"
+  },
+  {
+    "code": "BLACKFRIDAY50",
+    "discount": 50,
+    "available_at": "2024-11-29T00:00:00Z",
+    "expired_at": "2024-11-29T23:59:59Z"
+  },
+  {
+    "code": "NEWYEAR30",
+    "discount": 30,
+    "available_at": "2024-12-25T00:00:00Z",
+    "expired_at": "2025-01-01T23:59:59Z"
+  },
+  {
+    "code": "SPRING20",
+    "discount": 20,
+    "available_at": "2024-03-01T00:00:00Z",
+    "expired_at": "2024-05-31T23:59:59Z"
+  },
+  {
+    "code": "AUTUMN15",
+    "discount": 15,
+    "available_at": "2024-09-01T00:00:00Z",
+    "expired_at": "2024-11-30T23:59:59Z"
+  },
+  {
+    "code": "WINTER25",
+    "discount": 25,
+    "available_at": "2024-12-01T00:00:00Z",
+    "expired_at": "2025-02-28T23:59:59Z"
+  },
+  {
+    "code": "BACKTOSCHOOL5",
+    "discount": 5,
+    "available_at": "2024-08-15T00:00:00Z",
+    "expired_at": "2024-09-15T23:59:59Z"
+  },
+  {
+    "code": "CYBERMONDAY40",
+    "discount": 40,
+    "available_at": "2024-12-02T00:00:00Z",
+    "expired_at": "2024-12-02T23:59:59Z"
+  },
+  {
+    "code": "HOLIDAY35",
+    "discount": 35,
+    "available_at": "2024-12-20T00:00:00Z",
+    "expired_at": "2024-12-27T23:59:59Z"
+  },
+  {
+    "code": "VALENTINE15",
+    "discount": 15,
+    "available_at": "2024-02-01T00:00:00Z",
+    "expired_at": "2024-02-14T23:59:59Z"
+  },
+  {
+    "code": "HALLOWEEN20",
+    "discount": 20,
+    "available_at": "2024-10-25T00:00:00Z",
+    "expired_at": "2024-10-31T23:59:59Z"
+  },
+  {
+    "code": "EASTER10",
+    "discount": 10,
+    "available_at": "2024-03-15T00:00:00Z",
+    "expired_at": "2024-04-01T23:59:59Z"
+  },
+  {
+    "code": "FOOTBALLFAN30",
+    "discount": 30,
+    "available_at": "2024-06-01T00:00:00Z",
+    "expired_at": "2024-07-15T23:59:59Z"
+  },
+  {
+    "code": "WOMENSDAY25",
+    "discount": 25,
+    "available_at": "2024-03-01T00:00:00Z",
+    "expired_at": "2024-03-08T23:59:59Z"
+  },
+  {
+    "code": "EARTHDAY5",
+    "discount": 5,
+    "available_at": "2024-04-20T00:00:00Z",
+    "expired_at": "2024-04-22T23:59:59Z"
+  },
+  {
+    "code": "LABORDAY10",
+    "discount": 10,
+    "available_at": "2024-05-01T00:00:00Z",
+    "expired_at": "2024-05-01T23:59:59Z"
+  },
+  {
+    "code": "INDEPENDENCE20",
+    "discount": 20,
+    "available_at": "2024-07-01T00:00:00Z",
+    "expired_at": "2024-07-04T23:59:59Z"
+  },
+  {
+    "code": "MOTHERSDAY15",
+    "discount": 15,
+    "available_at": "2024-05-05T00:00:00Z",
+    "expired_at": "2024-05-12T23:59:59Z"
+  },
+  {
+    "code": "JAPAN2024",
+    "discount": 48,
+    "available_at": "2024-01-01T00:00:00Z",
+    "expired_at": "2024-12-31T23:59:59Z"
+  },
+  {
+    "code": "FREEXPRICE",
+    "discount": 99.9,
+    "available_at": "2024-01-01T00:00:00Z",
+    "expired_at": "2024-12-31T23:59:59Z"
+  }
+]

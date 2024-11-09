@@ -1,0 +1,29 @@
+[
+  {
+    "user_id": "bcf2be3e-8c11-4e28-b7bb-5c5373218909",
+    "items": []
+  },
+  {
+    "user_id": "6c915286-bdaf-4d6f-90c1-fd67ef1629f7",
+    "items": [
+      {
+        "uuid": "4c5d6e7f-8a9b-0c1d-2e3f-4a5b6c7d8e9f",
+        "pathurl": "/products/apple-watch-se-2-gen-2022-40-mm-starlight-bezhevyi-106362759",
+        "article": "106362759",
+        "price": "25,892",
+        "rating": 5.0,
+        "reviews": 344.0,
+        "currency": "RUB",
+        "discount": null,
+        "is_new": false,
+        "image": "./assets/img/64534203301918.jpg",
+        "name": "Смарт-часы Apple Watch SE 2 Gen (2022) 40 мм starlight-бежевый",
+        "brand": "apple",
+        "tags": [
+          "smart"
+        ],
+        "description": "Смарт-часы Apple Watch SE 2 Gen 2022 оснащены гибким силиконовым ремешком и квадратным сенсорным дисплеем с технологией OLED. Алюминиевый корпус устройства выдерживает неблагоприятные воздействия благодаря водонепроницаемости 5 Бар и прочности. Интегрированные датчики обеспечивают высокую точность определения параметров здоровья и физической деятельности."
+      }
+    ]
+  }
+]

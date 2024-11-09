@@ -1,0 +1,79 @@
+[
+  {
+    "id": "6c915286-bdaf-4d6f-90c1-fd67ef1629f7",
+    "username": "john_doe",
+    "login": "yandexphp",
+    "email": "john.doe@example.com",
+    "password_hash": "$2b$12$kLWeQC5eB3ZvAN5IF0BG7edWF6s//kJHBmu6UNqOzZ3IgYnf2Ckf.",
+    "phone_number": "+1234567890",
+    "date_of_birth": "1990-01-01",
+    "avatar_url": "https://example.com/avatar.jpg",
+    "registration_date": "2024-11-06T21:42:00.743896500Z",
+    "last_login_date": "2024-11-09T19:10:20.344541700Z",
+    "country": "USA",
+    "region": "California",
+    "city": "Los Angeles",
+    "address": "123 Main St, Apt 4B",
+    "zip_code": "90001",
+    "credit_cards": [
+      {
+        "id": "13a61762-396c-47c3-9d1e-5c874eb5242d",
+        "cardholder_name": "John Doe",
+        "card_number": "4111111111111111",
+        "expiration_date": "12/25",
+        "is_primary": true
+      }
+    ]
+  },
+  {
+    "id": "a220c472-24a1-4e8b-8de7-5d31dcc89c27",
+    "username": "test",
+    "login": "test",
+    "email": "test@example.com",
+    "password_hash": "$2b$12$WW0TMeOIDO7195lnKEnvOuNpIbhmLAEpvq8JdTNPpq5LrMrM/7z4u",
+    "phone_number": "090-1234-5678",
+    "date_of_birth": "1999-11-14",
+    "avatar_url": "https://steamuserimages-a.akamaihd.net/ugc/925932491881496187/88007176A4640503BCA7764133F9970377575A55/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false",
+    "registration_date": "2024-11-06T21:43:36.948234300Z",
+    "last_login_date": "2024-11-07T00:01:31.141408800Z",
+    "country": "Japan",
+    "region": "Tokyo",
+    "city": "Shinjuku",
+    "address": "1-2-3 Nishi-Shinjuku",
+    "zip_code": "160-0023",
+    "credit_cards": [
+      {
+        "id": "19d3888d-547d-4829-8136-c0973a342693",
+        "cardholder_name": "John Doe",
+        "card_number": "1234 5678 9012 3456",
+        "expiration_date": "12/24",
+        "is_primary": true
+      },
+      {
+        "id": "df017836-12e5-496d-8190-7d4203bdeb6e",
+        "cardholder_name": "John Doe",
+        "card_number": "9876 5432 1098 7654",
+        "expiration_date": "11/25",
+        "is_primary": false
+      }
+    ]
+  },
+  {
+    "id": "bcf2be3e-8c11-4e28-b7bb-5c5373218909",
+    "username": "xxxproker",
+    "login": "xxx",
+    "email": "xxx@gmail.com",
+    "password_hash": "$2b$12$flSoplBGZenCSOGLilHm8uJDG89rYwwpPAdgacpZPQ.NcRUXksfFO",
+    "phone_number": "090-1234-5678",
+    "date_of_birth": "1999-11-14",
+    "avatar_url": "https://steamuserimages-a.akamaihd.net/ugc/925932491881496187/88007176A4640503BCA7764133F9970377575A55/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false",
+    "registration_date": "2024-11-07T17:36:02.352688700Z",
+    "last_login_date": "2024-11-08T00:06:41.806120900Z",
+    "country": "Japan",
+    "region": "Tokyo",
+    "city": "Shinjuku",
+    "address": "1-2-3 Nishi-Shinjuku",
+    "zip_code": "160-0023",
+    "credit_cards": []
+  }
+]
