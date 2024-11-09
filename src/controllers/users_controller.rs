@@ -106,12 +106,14 @@ pub async fn update_profile_full(
 
             if app_state.users_store.update_user(user).await {
                 return HttpResponse::Ok().json(json!({
-                    "message": "Profile updated successfully"
+                    "message": "Profile updated successfully",
+                    "errorCode": "SUCCESS"
                 }));
             } else {
                 log::error!("Failed to update user with ID: {}", user_id);
                 return HttpResponse::InternalServerError().json(json!({
-                    "message": "Failed to update profile"
+                    "message": "Failed to update profile",
+                    "errorCode": "UPDATE_PROFILE_FAILED"
                 }));
             }
         } else {
@@ -277,9 +279,9 @@ pub async fn add_credit_card(
             drop(users);
 
             if let Err(e) = app_state.users_store.save().await {
+                log::error!("Failed to save data - error: {}", e.to_string());
                 return HttpResponse::InternalServerError().json(json!({
                     "message": "Failed to save data",
-                    "error": e.to_string(),
                     "errorCode": "SAVE_ERROR"
                 }));
             }

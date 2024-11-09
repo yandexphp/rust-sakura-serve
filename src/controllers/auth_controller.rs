@@ -45,7 +45,8 @@ pub async fn sign_up(
     if username.is_empty() || login.is_empty() || password.is_empty() {
         log::error!("Missing required fields");
         return HttpResponse::BadRequest().json(json!({
-            "message": "All fields except avatar_url are required"
+            "message": "All fields except avatar_url are required",
+            "errorCode": "FIELDS_MISSING"
         }));
     }
 
@@ -54,7 +55,8 @@ pub async fn sign_up(
     {
         log::error!("User already exists: username = {}, login = {}", username, login);
         return HttpResponse::BadRequest().json(json!({
-            "message": "User already exists"
+            "message": "User already exists",
+            "errorCode": "USER_ALREADY_EXISTS"
         }));
     }
 
@@ -151,7 +153,8 @@ pub async fn sign_in(
             session.insert("user_id", user.id).unwrap();
 
             HttpResponse::Ok().json(json!({
-                "message": "Logged in successfully"
+                "message": "Logged in successfully",
+                "errorCode": "SUCCESS"
             }))
         }
         _ => HttpResponse::Unauthorized().json(json!({
@@ -166,7 +169,8 @@ pub async fn logout(session: Session) -> impl Responder {
     if let Ok(Some(_user_id)) = session.get::<Uuid>("user_id") {
         session.remove("user_id");
         HttpResponse::Ok().json(json!({
-            "message": "Logged out successfully"
+            "message": "Logged out successfully",
+            "errorCode": "SUCCESS"
         }))
     } else {
         HttpResponse::Unauthorized().json(json!({

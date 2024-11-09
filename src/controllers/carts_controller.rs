@@ -31,7 +31,10 @@ pub async fn add_product_to_cart(
 
     if let Some(user_id) = session.get::<Uuid>("user_id").unwrap_or(None) {
         match app_state.carts_store.add_product_to_cart(user_id, product_id).await {
-            Ok(_) => HttpResponse::Ok().json(json!({ "message": "Product added to cart successfully" })),
+            Ok(_) => HttpResponse::Ok().json(json!({
+                "message": "Product added to cart successfully",
+                "errorCode": "SUCCESS"
+            })),
             Err(e) => HttpResponse::BadRequest().json(json!({
                 "message": e.to_string(),
                 "errorCode": "BAD_REQUEST_ERROR"
@@ -55,7 +58,10 @@ pub async fn remove_product_from_cart(
 
     if let Some(user_id) = session.get::<Uuid>("user_id").unwrap_or(None) {
         match app_state.carts_store.remove_product_from_cart(user_id, product_id).await {
-            Ok(_) => HttpResponse::Ok().json(json!({ "message": "Product removed from cart successfully" })),
+            Ok(_) => HttpResponse::Ok().json(json!({
+                "message": "Product removed from cart successfully",
+                "errorCode": "SUCCESS"
+            })),
             Err(e) => HttpResponse::BadRequest().json(json!({
                 "message": e.to_string(),
                 "errorCode": "BAD_REQUEST_ERROR"

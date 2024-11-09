@@ -41,7 +41,10 @@ pub async fn create_order(
             data.promo_code.clone(),
             &app_state
         ).await {
-            Ok(_) => HttpResponse::Ok().json(json!({ "message": "Order created successfully" })),
+            Ok(_) => HttpResponse::Ok().json(json!({
+                "message": "Order created successfully",
+                "errorCode": "SUCCESS"
+            })),
             Err(e) => HttpResponse::BadRequest().json(json!({
                 "message": e.to_string(),
                 "errorCode": "BAD_REQUEST_ERROR"
@@ -65,7 +68,10 @@ pub async fn delete_order(
 
     if let Some(user_id) = session.get::<Uuid>("user_id").unwrap_or(None) {
         match app_state.orders_store.remove_order(user_id, order_id).await {
-            Ok(_) => HttpResponse::Ok().json(json!({ "message": "Order deleted successfully" })),
+            Ok(_) => HttpResponse::Ok().json(json!({
+                "message": "Order deleted successfully",
+                "errorCode": "SUCCESS"
+            })),
             Err(e) => HttpResponse::BadRequest().json(json!({
                 "message": e.to_string(),
                 "errorCode": "BAD_REQUEST_ERROR"

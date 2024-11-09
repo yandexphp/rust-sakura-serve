@@ -29,7 +29,10 @@ pub async fn add_product_to_favorites(
 ) -> impl Responder {
     if let Some(user_id) = session.get::<Uuid>("user_id").unwrap_or(None) {
         match app_state.favorites_store.add_product_to_favorites(user_id, product_id.into_inner()).await {
-            Ok(_) => HttpResponse::Ok().json(json!({ "message": "Product added to favorites successfully" })),
+            Ok(_) => HttpResponse::Ok().json(json!({
+                "message": "Product added to favorites successfully",
+                "errorCode": "SUCCESS"
+            })),
             Err(e) => HttpResponse::BadRequest().json(json!({
                 "message": e.to_string(),
                 "errorCode": "BAD_REQUEST_ERROR"
@@ -53,7 +56,10 @@ pub async fn remove_product_from_favorites(
 
     if let Some(user_id) = session.get::<Uuid>("user_id").unwrap_or(None) {
         match app_state.favorites_store.remove_product_from_favorites(user_id, product_id).await {
-            Ok(_) => HttpResponse::Ok().json(json!({ "message": "Product removed from favorites successfully" })),
+            Ok(_) => HttpResponse::Ok().json(json!({
+                "message": "Product removed from favorites successfully",
+                "errorCode": "SUCCESS"
+            })),
             Err(e) => HttpResponse::BadRequest().json(json!({
                 "message": e.to_string(),
                 "errorCode": "BAD_REQUEST_ERROR"

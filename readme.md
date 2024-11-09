@@ -148,7 +148,8 @@ DATABASE_URL=postgres://user:password@localhost/dbname
 
   ```json
   {
-    "message": "User registered successfully"
+    "message": "User registered successfully",
+    "errorCode": "SUCCESS"
   }
   ```
 
@@ -175,7 +176,8 @@ DATABASE_URL=postgres://user:password@localhost/dbname
 
   ```json
   {
-    "message": "Logged in successfully"
+    "message": "Logged in successfully",
+    "errorCode": "SUCCESS"
   }
   ```
 
@@ -193,7 +195,8 @@ DATABASE_URL=postgres://user:password@localhost/dbname
 
   ```json
   {
-    "message": "Logged out successfully"
+    "message": "Logged out successfully",
+    "errorCode": "SUCCESS"
   }
   ```
 
@@ -272,7 +275,8 @@ DATABASE_URL=postgres://user:password@localhost/dbname
 
   ```json
   {
-    "message": "Profile updated successfully"
+    "message": "Profile updated successfully",
+    "errorCode": "SUCCESS"
   }
   ```
 
@@ -299,7 +303,8 @@ DATABASE_URL=postgres://user:password@localhost/dbname
 
   ```json
   {
-    "message": "Profile updated successfully"
+    "message": "Profile updated successfully",
+    "errorCode": "SUCCESS"
   }
   ```
 
@@ -342,7 +347,8 @@ DATABASE_URL=postgres://user:password@localhost/dbname
 
   ```json
   {
-    "message": "Credit card added successfully"
+    "message": "Credit card added successfully",
+    "errorCode": "SUCCESS"
   }
   ```
 
@@ -360,7 +366,8 @@ DATABASE_URL=postgres://user:password@localhost/dbname
 
   ```json
   {
-    "message": "Credit card deleted successfully"
+    "message": "Credit card deleted successfully",
+    "errorCode": "SUCCESS"
   }
   ```
 
@@ -433,7 +440,8 @@ DATABASE_URL=postgres://user:password@localhost/dbname
 
   ```json
   {
-    "message": "Product added to cart successfully"
+    "message": "Product added to cart successfully",
+    "errorCode": "SUCCESS"
   }
   ```
 
@@ -451,7 +459,8 @@ DATABASE_URL=postgres://user:password@localhost/dbname
 
   ```json
   {
-    "message": "Product removed from cart successfully"
+    "message": "Product removed from cart successfully",
+    "errorCode": "SUCCESS"
   }
   ```
 
@@ -518,7 +527,8 @@ DATABASE_URL=postgres://user:password@localhost/dbname
 
   ```json
   {
-    "message": "Product added to favorites successfully"
+    "message": "Product added to favorites successfully",
+    "errorCode": "SUCCESS"
   }
   ```
 
@@ -536,7 +546,8 @@ DATABASE_URL=postgres://user:password@localhost/dbname
 
   ```json
   {
-    "message": "Product removed from favorites successfully"
+    "message": "Product removed from favorites successfully",
+    "errorCode": "SUCCESS"
   }
   ```
 
@@ -612,7 +623,8 @@ DATABASE_URL=postgres://user:password@localhost/dbname
 **レスポンス:**
   ```json
     {
-      "message": "Order created successfully"
+      "message": "Order created successfully",
+      "errorCode": "SUCCESS"
     }
   ```
 
@@ -622,7 +634,8 @@ DATABASE_URL=postgres://user:password@localhost/dbname
 **レスポンス:**
   ```json
     {
-      "message": "Order deleted successfully"
+      "message": "Order deleted successfully",
+      "errorCode": "SUCCESS"
     }
   ```
 
